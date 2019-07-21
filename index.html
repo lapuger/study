@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="ko"><!--lang 속성: 웹 브라우저 동작에 영향을 미치지않음/검색 엔진이 웹페이지를 탐색할때 해당 페이지의 언어를 인식해서 출력-->
+<head>
+	<meta charset="UTF-8">
+	<title>모던 웹을 위한~바이블</title><!--title: 검색 엔진에 잘 걸리게 연관성있는 제목으루 잘 정하기-->
+	<style type="text/css">
+		body{font:nomal 16px '바른나눔고딕'; line-height: 30px; position:absolute; }
+		div{margin-bottom: 30px;}
+		li{margin-left:20px;}
+		h2,h3{margin-top:20px;}
+		a{color:#2798E8; font-weight: bold;}
+		dt{float: left;}
+		dd{float: left;}
+		
+
+
+	</style>
+</head>
+
+<body>
+<div>
+	<dl>
+	<dt>
+	<dd><a href="#1head">head태그</a></dd> <dd><a href="#2text">글자태그</a></dd> <dd><a href="#3table">테이블태그</a></dd> <dd><a href="#4image">이미지 태그</a></dd> <dd><a href="#5audio">오디오 태그</a></dd> <dd><a href="#6video">비디오 태그</a></dd>
+	</dt>
+	<dt>
+		<dd>입력 양식 태그</dd> <dd>공간 분할 태그</dd>
+	</dt>
+</div>
+
+<br /><br />
+<div>
+<ol>
+<li style="font-size: 20px" id="1head"><b>head 태그 내부에 넣을 수 있는 태그</b></li>
+	<hr color="#000" />
+	<ul>
+		<li>meta 웹 페이지에 추가 정보를 전달</li>
+		<li>title 웹 페이지의 제목</li>
+		<li>script 웹 페이지에 스크립트를 추가</li>
+		<li>link 웹 페이지에 다른 파일을 추가</li>
+		<li>style 웹 페이지에 스타일시트를 추가</li>
+		<li>base 웹 페이지의 기본 경로를 지정</li>
+		<a href="#" title="처음으로">처음으로</a>
+	</ul>
+
+<br />
+<li style="font-size: 20px" id="2text"><b>글자 태그</b></li>
+	<hr color="#000" />
+	<ol>
+		<li>제목</li>
+			<ul>
+				<li>h는 heading을 의미</li>
+				<li>숫자가 작을수록 크기/우선순위 높음</li>
+			</ul>
+		<li>본문</li>
+			<ul>
+				<li>p(paragraph, 단락) 본문 글자 태그</li>
+				<li>br 줄바꿈 태그</li>
+				<li>hr 수평줄 태그</li>
+			</ul>
+		<li>앵커 태그</li>
+			<ul>
+				<li>서로 다른 웹페이지 사이를 이동하거나<br />
+				웹페이지 내부에서 특정한 위치로 이동할 때 사용하는 태그</li>
+				<li>&lt;a href=	&quot;&quot;&gt;&lt;&sol;a&gt;</li>
+			</ul>
+		<li>글자 형태</li>
+			<ul>
+				<li>b(bold) <b>내용을 굵게 표시</b></li>
+				<li>strong <strong>의미 강조</strong></li>
+				<li>i(italic) <i>기울어지게</i></li>
+				<li>em(emphasis) <em>이태릭체로 강조</em>	</li>
+				<li>ins <ins>밑줄 태그</ins></li>
+				<li>u(underline) 태그는 html5에서 사용 막음</li>
+				<li>del <del>가운데 줄 그어진 태그</del></li>
+				<li>small <small>작은 글자 태그</small></li>
+				<li>sup <sup>윗첨자 태그</sup></li>
+				<li>sub <sub>아래첨자 태그</sub></li>
+				<li>q <q>인용 태그</q></li>
+				<li>mark <mark>형광펜 효과</mark></li>
+				<li>cite <cite>참고 내용 표시</cite></li>
+				<a href="#" title="처음으로">처음으로</a>
+			</ul>
+		</ol>
+<br />
+<li style="font-size: 20px" id="3table"><b>테이블 태그</b></li>
+	<hr color="#000" />
+	<ul>
+		<li>tr 표 내부의 행 태그</li>
+		<li>th 행 내부의 제목 셀 태그</li>
+		<li>td 행 내부의 일반 셀 태그</li>
+		<li>table 태그 속성 한가지=border</li>
+		<li>th/td 태그 속성</li>
+			<ul>
+			<li>rowspan 셀의 높이 지정</li>
+			<li>colspan 셀의 너비 지정</li>
+			</ul>
+	</ul>
+	<br />
+	<table border="1">
+		<caption>캡션</caption>
+		<thead style="background: yellow">
+		<tr>			
+			<th>헤더1</th>
+			<th>헤더2</th>
+		</tr>
+		</thead>
+		<tbody style="background: red">
+		<tr>
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+		<tr>
+			<td>내용2</td>
+			<td>내용2</td>
+		</tr>
+		</tbody>
+	</table>
+	<br />
+	<table border="1">
+		<tr>
+			<th colspan="3">Table Data</th>
+			<th rowspan="3">Table Data</th>
+		</tr>
+		<tr>
+			<td>Table Data</td>
+			<td rowspan="2">Table Data</td>
+			<td>Table Data</td>
+		</tr>
+		<tr>
+			<td>Table Data</td>
+			<td>Table Data</td>
+		</tr>
+	</table>
+	<a href="#" title="처음으로">처음으로</a>
+<br /><br />
+<li style="font-size: 20px" id="4image"><b>이미지 태그</b></li>	
+	<hr color="#000" />
+	<ol>
+		<li>이미지 태그의 속성</li>
+			<ul>
+				<li>src 이미지의 경로 지정</li>
+				<li>alt 이미지가 없을 때 나오는 글자 지정(이미지 설명)</li>
+				<li>width 이미지의 너비 지정</li>
+				<li>height 이미지의 높이 지정</li>
+			</ul>
+		<li>이미지 출력 예시</li>
+		<img src="img_ex1.jpg" alt="종이접기 이미지" width="500" />
+		<li> 이미지 미완일때 placeholder 이용해 임시로 걸기</li>
+		<img src="http://placehold.it/500x300" />
+		<br />
+		<a href="#" title="처음으로">처음으로</a>
+	</ol>
+<br />
+<li style="font-size: 20px" id="5audio"><b>오디오 태그</b></li>	
+	<hr color="#000" />
+	<ol>
+		<li>audio 태그</li>
+			<ul>
+				<li>audio태그의 속성</li>
+				<ul>
+					<li>src 음악 파일의 경로 지정</li>
+					<li>preload 음악을 재생하기 전에 모두 불러올지 지정</li>
+					<li>autoplay 음악을 자동 재생할지 지정</li>
+					<li>loop 음악을 반복할지 지정</li>
+					<li>controls 음악 재생 도구를 출력할지 지정</li>
+				</ul>	
+			</ul>
+		<li>source 태그</li>
+	<a href="#" title="처음으로">처음으로</a>
+	</ol>
+</ol>
+</div>
+</body>
+</html>
