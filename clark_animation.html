@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>clark</title>
+	<style type="text/css">
+		*{margin:0; padding:0;}
+		body{margin:20px;}
+		#wrap{background-color:#4db8ff; width:900px; height:550px; overflow:hidden; position:relative; z-index:1;}
+		li{list-style:none;}
+		#cloud .c1{position:absolute; top:0; left:0; animation:c1 10s linear infinite; z-index: 2;}
+		#cloud .c2{position:absolute; top:0; left:-1300px; animation:c2 10s linear infinite; z-index: 2;}
+		#cloud li:nth-of-type(1){position:absolute; top:40px;left:0px;}
+		#cloud li:nth-of-type(2){position:absolute; top:50px;left:-300px;}
+		#cloud li:nth-of-type(3){position:absolute; top:0px;left:-130px;}
+
+		@keyframes c1{
+			0%{left:0;}
+			100%{left:1200px;}
+		}
+		@keyframes c2{
+			0%{left:-1200px;}
+			100%{left:0px;}
+		}
+
+		.clark{position:absolute; top:-30px; left:150px; z-index:3; animation:fly 2s infinite linear;}
+		@keyframes fly{
+			0%{top:-30px; left:150px;}
+			50%{top:-15px; left:150px;}
+			100%{top:-30px; left:150px;}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="wrap">	
+	<div id="cloud">
+	<ul class="c1">
+		<li><img src="cloud01.png" alt="cloud1" /></li>
+		<li><im src="cloud02.png" alt="cloud2" /></li>
+		<li><img src="cloud03.png" alt="cloud3" /></li>
+	</ul>
+	<ul class="c2">
+		<li><img src="cloud01.png" alt="cloud1" /></li>
+		<li><im src="cloud02.png" alt="cloud2" /></li>
+		<li><img src="cloud03.png" alt="cloud3" /></li>
+	</ul>
+	</div>
+	<div class="clark"><img src="clark.png" alt="clark" /></div>
+	</div>
+</body>
+</html>
